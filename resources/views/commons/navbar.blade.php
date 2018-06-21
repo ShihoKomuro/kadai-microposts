@@ -21,6 +21,9 @@
                                 <li>{!! link_to_route('users.show', 'My profile', ['id' => Auth::User()->id]) !!}</li>
                                 <li role="separator" class="divider"></li>
                                 <li>{!! link_to_route('logout.get', 'Logout') !!}</li>
+                                <li role="separator" class="divider"></li>
+                                <li>{!! link_to_route('users.favorites', 'Favorite', ['id' => Auth::User()->id]) !!}</li>
+                                
                             </ul>
                         </li>
                     @else
